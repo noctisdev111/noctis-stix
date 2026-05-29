@@ -1,0 +1,2078 @@
+{
+  "id": "bundle--490ec7db-f200-573c-b917-cdaaf0a4d76e",
+  "objects": [
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "description": "Cyber threat intelligence derived from NOCTIS honeypot infrastructure.",
+      "id": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "identity_class": "organization",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "NOCTIS Threat Intelligence",
+      "sectors": [
+        "technology"
+      ],
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "confidence": 54,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 6 malicious, 2 suspicious detections. Country: CN. AS: Beijing Volcano Engine Technology Co., Ltd.. | AbuseIPDB: 100% confidence, 33 reports. ISP: Beijing Volcano Engine Technology Co., Ltd.. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/101.96.212.80"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/101.96.212.80"
+        }
+      ],
+      "id": "indicator--165f6020-07f9-5a75-99fb-34a8235bcb96",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 101.96.212.80",
+      "pattern": "[ipv4-addr:value = '101.96.212.80']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Beijing Volcano Engine Technology Co., Ltd.",
+      "x_noctis_country": "CN",
+      "x_noctis_score": 54
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Beijing Volcano Engine Technology Co., Ltd. in CN, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--e6548ec7-d0cf-5b6a-8a6e-326a279aa055",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 101.96.212.80 (CN)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--739ab312-6e9f-5ab5-9624-df9c97f44177",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--165f6020-07f9-5a75-99fb-34a8235bcb96",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--e6548ec7-d0cf-5b6a-8a6e-326a279aa055",
+      "type": "relationship"
+    },
+    {
+      "confidence": 59,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 15 malicious, 4 suspicious detections. Country: ZA. AS: Hbing Limited. | AbuseIPDB: 100% confidence, 610 reports. ISP: Digital Energy Technologies Limited. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/102.129.200.117"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/102.129.200.117"
+        }
+      ],
+      "id": "indicator--0fc4c47e-38d8-587a-a73b-3749eacc657d",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 102.129.200.117",
+      "pattern": "[ipv4-addr:value = '102.129.200.117']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Hbing Limited",
+      "x_noctis_country": "ZA",
+      "x_noctis_score": 59
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Hbing Limited in ZA, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--34bb34e1-5612-532c-b87d-0ebd78372df9",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 102.129.200.117 (ZA)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--2da12fe0-b003-568b-b35b-fd3bcebef49a",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--0fc4c47e-38d8-587a-a73b-3749eacc657d",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--34bb34e1-5612-532c-b87d-0ebd78372df9",
+      "type": "relationship"
+    },
+    {
+      "confidence": 60,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 16 malicious, 5 suspicious detections. Country: HK. AS: YISU CLOUD LTD. | AbuseIPDB: 100% confidence, 2472 reports. ISP: Hongkong Hongdou Technology Co., Limited. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/103.143.231.102"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/103.143.231.102"
+        }
+      ],
+      "id": "indicator--275ba0d3-082e-5d0d-a7e7-5b00dd34769e",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 103.143.231.102",
+      "pattern": "[ipv4-addr:value = '103.143.231.102']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "YISU CLOUD LTD",
+      "x_noctis_country": "HK",
+      "x_noctis_score": 60
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by YISU CLOUD LTD in HK, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--805dec1d-1faa-5935-9ed3-18ec3c89f39a",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 103.143.231.102 (HK)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--7dbb2f17-8e0e-5137-a3da-a135588c5f39",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--275ba0d3-082e-5d0d-a7e7-5b00dd34769e",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--805dec1d-1faa-5935-9ed3-18ec3c89f39a",
+      "type": "relationship"
+    },
+    {
+      "confidence": 59,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 15 malicious, 4 suspicious detections. Country: ZA. AS: NexonHost Srl. | AbuseIPDB: 100% confidence, 954 reports. ISP: Internet Utilities Africa (PTY) LTD. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/102.129.186.87"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/102.129.186.87"
+        }
+      ],
+      "id": "indicator--7a5314bd-aec8-5282-8c9b-6131a4b4ca93",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 102.129.186.87",
+      "pattern": "[ipv4-addr:value = '102.129.186.87']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "NexonHost Srl",
+      "x_noctis_country": "ZA",
+      "x_noctis_score": 59
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by NexonHost Srl in ZA, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--b49588c3-16a4-586b-972e-2091926b26fe",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 102.129.186.87 (ZA)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--54d7b213-5a7e-560f-94ae-d529b923674d",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7a5314bd-aec8-5282-8c9b-6131a4b4ca93",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--b49588c3-16a4-586b-972e-2091926b26fe",
+      "type": "relationship"
+    },
+    {
+      "confidence": 55,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 7 malicious, 3 suspicious detections. Country: BD. AS: 99IT. | AbuseIPDB: 100% confidence, 286 reports. ISP: 99IT. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/103.112.62.144"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/103.112.62.144"
+        }
+      ],
+      "id": "indicator--e20dcc73-996c-5390-83a8-910c6abc0236",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 103.112.62.144",
+      "pattern": "[ipv4-addr:value = '103.112.62.144']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "99IT",
+      "x_noctis_country": "BD",
+      "x_noctis_score": 55
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by 99IT in BD, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--fd45028d-9baf-5936-aa5c-02083cb77d10",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 103.112.62.144 (BD)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--0b615a66-412e-5eeb-85d1-db74220fccca",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--e20dcc73-996c-5390-83a8-910c6abc0236",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--fd45028d-9baf-5936-aa5c-02083cb77d10",
+      "type": "relationship"
+    },
+    {
+      "confidence": 52,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 4 malicious, 1 suspicious detections. Country: HK. AS: YISU CLOUD LTD. | AbuseIPDB: 100% confidence, 77 reports. ISP: HK KXSY TECHNOLOGY CO.,LIMITED. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/103.146.158.57"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/103.146.158.57"
+        }
+      ],
+      "id": "indicator--375e26d1-a4c8-54d7-8588-25da0798cb18",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 103.146.158.57",
+      "pattern": "[ipv4-addr:value = '103.146.158.57']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "YISU CLOUD LTD",
+      "x_noctis_country": "HK",
+      "x_noctis_score": 52
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by YISU CLOUD LTD in HK, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--ecfcb1a7-112d-5d98-b230-6fe507779c16",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 103.146.158.57 (HK)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--6fbe8f25-0b6e-5446-82d0-997d9b343a24",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--375e26d1-a4c8-54d7-8588-25da0798cb18",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--ecfcb1a7-112d-5d98-b230-6fe507779c16",
+      "type": "relationship"
+    },
+    {
+      "confidence": 55,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 8 malicious, 3 suspicious detections. Country: HK. AS: UCLOUD INFORMATION TECHNOLOGY HK LIMITED. | AbuseIPDB: 100% confidence, 436 reports. ISP: UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/103.149.26.43"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/103.149.26.43"
+        }
+      ],
+      "id": "indicator--f914242b-33ce-547f-847d-972980d69db9",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 103.149.26.43",
+      "pattern": "[ipv4-addr:value = '103.149.26.43']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+      "x_noctis_country": "HK",
+      "x_noctis_score": 55
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by UCLOUD INFORMATION TECHNOLOGY HK LIMITED in HK, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--c11b04a9-b5f4-52a5-bf0b-d9befff608e4",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 103.149.26.43 (HK)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--a1c8d815-5d36-58fa-9c31-4137c983efe4",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f914242b-33ce-547f-847d-972980d69db9",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--c11b04a9-b5f4-52a5-bf0b-d9befff608e4",
+      "type": "relationship"
+    },
+    {
+      "confidence": 60,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 16 malicious, 4 suspicious detections. Country: CN. AS: Beijing Volcano Engine Technology Co., Ltd.. | AbuseIPDB: 100% confidence, 878 reports. ISP: Beijing Volcano Engine Technology Co., Ltd.. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/101.126.153.162"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/101.126.153.162"
+        }
+      ],
+      "id": "indicator--fd34a439-214f-5051-869d-a0562e6678c8",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 101.126.153.162",
+      "pattern": "[ipv4-addr:value = '101.126.153.162']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Beijing Volcano Engine Technology Co., Ltd.",
+      "x_noctis_country": "CN",
+      "x_noctis_score": 60
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Beijing Volcano Engine Technology Co., Ltd. in CN, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--15699442-3d56-5d8d-8bdc-2f453c3c546d",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 101.126.153.162 (CN)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--0bd5057a-d406-573d-adc1-5fe56c18490b",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--fd34a439-214f-5051-869d-a0562e6678c8",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--15699442-3d56-5d8d-8bdc-2f453c3c546d",
+      "type": "relationship"
+    },
+    {
+      "confidence": 37,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 0 malicious, 1 suspicious detections. Country: CN. AS: Shenzhen Tencent Computer Systems Company Limited. | AbuseIPDB: 74% confidence, 13 reports. ISP: Tencent Cloud Computing (Beijing) Co., Ltd. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/101.35.248.174"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/101.35.248.174"
+        }
+      ],
+      "id": "indicator--6d44ea10-b9cd-58d6-b3d6-aab6bd9a0dae",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 101.35.248.174",
+      "pattern": "[ipv4-addr:value = '101.35.248.174']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Shenzhen Tencent Computer Systems Company Limited",
+      "x_noctis_country": "CN",
+      "x_noctis_score": 37
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Shenzhen Tencent Computer Systems Company Limited in CN, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--e920733c-7fcc-59f8-8918-8acf7897b85d",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 101.35.248.174 (CN)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--a2f4e1c4-74b4-5ffa-9d46-f73566db0c1b",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6d44ea10-b9cd-58d6-b3d6-aab6bd9a0dae",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--e920733c-7fcc-59f8-8918-8acf7897b85d",
+      "type": "relationship"
+    },
+    {
+      "confidence": 55,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 7 malicious, 4 suspicious detections. Country: ZA. AS: Telasera-Technologies. | AbuseIPDB: 100% confidence, 63 reports. ISP: Hosting. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/102.206.117.212"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/102.206.117.212"
+        }
+      ],
+      "id": "indicator--7d6ed7d1-5615-5598-96e1-ded2cc1705be",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 102.206.117.212",
+      "pattern": "[ipv4-addr:value = '102.206.117.212']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Telasera-Technologies",
+      "x_noctis_country": "ZA",
+      "x_noctis_score": 55
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Telasera-Technologies in ZA, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--1a4e2de9-8c25-5fe0-8473-f5a8b93103d1",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 102.206.117.212 (ZA)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--fab0a615-920e-5cd2-a92b-44c968157c6b",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7d6ed7d1-5615-5598-96e1-ded2cc1705be",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--1a4e2de9-8c25-5fe0-8473-f5a8b93103d1",
+      "type": "relationship"
+    },
+    {
+      "confidence": 57,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 12 malicious, 3 suspicious detections. Country: ZA. AS: DataKeepers. | AbuseIPDB: 100% confidence, 179 reports. ISP: DataKeepers (Pty) Ltd. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/102.67.141.165"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/102.67.141.165"
+        }
+      ],
+      "id": "indicator--44b16a9e-a918-5411-9d92-efecd1a9fccc",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 102.67.141.165",
+      "pattern": "[ipv4-addr:value = '102.67.141.165']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "DataKeepers",
+      "x_noctis_country": "ZA",
+      "x_noctis_score": 57
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by DataKeepers in ZA, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--3899170e-8adb-53d8-8359-cdab47decca9",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 102.67.141.165 (ZA)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--517354c9-51b6-505a-a0b2-f2796ee03d5e",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--44b16a9e-a918-5411-9d92-efecd1a9fccc",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--3899170e-8adb-53d8-8359-cdab47decca9",
+      "type": "relationship"
+    },
+    {
+      "confidence": 52,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 3 malicious, 2 suspicious detections. Country: CN. AS: Shenzhen Tencent Computer Systems Company Limited. | AbuseIPDB: 100% confidence, 31 reports. ISP: Tencent cloud computing (Beijing) Co., Ltd.. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/1.12.222.63"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/1.12.222.63"
+        }
+      ],
+      "id": "indicator--be519411-8442-5e1a-a766-6286264c5552",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 1.12.222.63",
+      "pattern": "[ipv4-addr:value = '1.12.222.63']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Shenzhen Tencent Computer Systems Company Limited",
+      "x_noctis_country": "CN",
+      "x_noctis_score": 52
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Shenzhen Tencent Computer Systems Company Limited in CN, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--db6ad020-603a-5f05-a123-7c0ae9a9ef6b",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 1.12.222.63 (CN)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--a8f92978-5182-5365-9652-d5387e3a004c",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--be519411-8442-5e1a-a766-6286264c5552",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--db6ad020-603a-5f05-a123-7c0ae9a9ef6b",
+      "type": "relationship"
+    },
+    {
+      "confidence": 54,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 6 malicious, 1 suspicious detections. Country: CN. AS: Chinanet. | AbuseIPDB: 100% confidence, 132 reports. ISP: CHINANET henan province network. Usage: Commercial. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/1.192.191.10"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/1.192.191.10"
+        }
+      ],
+      "id": "indicator--0525a922-ec8d-5b40-b84d-76ab8915d07d",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 1.192.191.10",
+      "pattern": "[ipv4-addr:value = '1.192.191.10']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Chinanet",
+      "x_noctis_country": "CN",
+      "x_noctis_score": 54
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Chinanet in CN, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--231927a4-d11f-5088-b048-3947bf04d8c8",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 1.192.191.10 (CN)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--b0907965-3f6c-58d1-b806-3a66bbb6161f",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--0525a922-ec8d-5b40-b84d-76ab8915d07d",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--231927a4-d11f-5088-b048-3947bf04d8c8",
+      "type": "relationship"
+    },
+    {
+      "confidence": 56,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 8 malicious, 5 suspicious detections. Country: CN. AS: Beijing Volcano Engine Technology Co., Ltd.. | AbuseIPDB: 100% confidence, 658 reports. ISP: Beijing Volcano Engine Technology Co., Ltd.. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/101.126.24.71"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/101.126.24.71"
+        }
+      ],
+      "id": "indicator--19340898-ef9b-5271-856c-bbf72f1c1cd5",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 101.126.24.71",
+      "pattern": "[ipv4-addr:value = '101.126.24.71']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Beijing Volcano Engine Technology Co., Ltd.",
+      "x_noctis_country": "CN",
+      "x_noctis_score": 56
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Beijing Volcano Engine Technology Co., Ltd. in CN, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--827eceda-9347-51d7-b1fb-45c067e58383",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 101.126.24.71 (CN)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--81e0c4cf-a743-5c41-ac01-780a6a28af09",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--19340898-ef9b-5271-856c-bbf72f1c1cd5",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--827eceda-9347-51d7-b1fb-45c067e58383",
+      "type": "relationship"
+    },
+    {
+      "confidence": 56,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 10 malicious, 3 suspicious detections. Country: HK. AS: UCLOUD INFORMATION TECHNOLOGY HK LIMITED. | AbuseIPDB: 100% confidence, 6302 reports. ISP: UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/101.36.111.119"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/101.36.111.119"
+        }
+      ],
+      "id": "indicator--4c4fe58f-f0f4-5ab6-8d93-db16eb9def38",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 101.36.111.119",
+      "pattern": "[ipv4-addr:value = '101.36.111.119']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+      "x_noctis_country": "HK",
+      "x_noctis_score": 56
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by UCLOUD INFORMATION TECHNOLOGY HK LIMITED in HK, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--a8c5f797-3299-53db-b1d8-8ce9e2cf6738",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 101.36.111.119 (HK)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--bf14d231-8c58-576b-a7f7-dfc48e69ff70",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--4c4fe58f-f0f4-5ab6-8d93-db16eb9def38",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--a8c5f797-3299-53db-b1d8-8ce9e2cf6738",
+      "type": "relationship"
+    },
+    {
+      "confidence": 58,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 13 malicious, 3 suspicious detections. Country: HK. AS: YISU CLOUD LTD. | AbuseIPDB: 100% confidence, 4579 reports. ISP: HONG KONG LING JIAN ZHUO TECHNOLOGY CO., LIMITED. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/103.143.238.100"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/103.143.238.100"
+        }
+      ],
+      "id": "indicator--3cbadb23-2186-5cae-895f-9192e59fa0c2",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 103.143.238.100",
+      "pattern": "[ipv4-addr:value = '103.143.238.100']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "YISU CLOUD LTD",
+      "x_noctis_country": "HK",
+      "x_noctis_score": 58
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by YISU CLOUD LTD in HK, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--2b2064b8-0e67-5508-915a-9ee586e3255a",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 103.143.238.100 (HK)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--c474797f-7809-58de-8fa6-6fef21d13fb7",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--3cbadb23-2186-5cae-895f-9192e59fa0c2",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--2b2064b8-0e67-5508-915a-9ee586e3255a",
+      "type": "relationship"
+    },
+    {
+      "confidence": 59,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 14 malicious, 5 suspicious detections. Country: HK. AS: YISU CLOUD LTD. | AbuseIPDB: 100% confidence, 2009 reports. ISP: HK KXSY TECHNOLOGY CO.,LIMITED. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/103.146.159.173"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/103.146.159.173"
+        }
+      ],
+      "id": "indicator--11a18045-4f5b-55d4-880a-9adb1ec38bbe",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 103.146.159.173",
+      "pattern": "[ipv4-addr:value = '103.146.159.173']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "YISU CLOUD LTD",
+      "x_noctis_country": "HK",
+      "x_noctis_score": 59
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by YISU CLOUD LTD in HK, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--946d25bd-9047-543e-966e-99e82f0687d7",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 103.146.159.173 (HK)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--6bba268c-667d-5583-9e40-21381ea879d7",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--11a18045-4f5b-55d4-880a-9adb1ec38bbe",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--946d25bd-9047-543e-966e-99e82f0687d7",
+      "type": "relationship"
+    },
+    {
+      "confidence": 60,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 15 malicious, 5 suspicious detections. Country: BD. AS: The 1 Web Solution. | AbuseIPDB: 100% confidence, 4767 reports. ISP: The 1 Web Solution. Usage: Fixed Line ISP. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/103.154.158.70"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/103.154.158.70"
+        }
+      ],
+      "id": "indicator--5af4eb06-d389-527e-93df-c33f525299dc",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 103.154.158.70",
+      "pattern": "[ipv4-addr:value = '103.154.158.70']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "The 1 Web Solution",
+      "x_noctis_country": "BD",
+      "x_noctis_score": 60
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by The 1 Web Solution in BD, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--f89c8c6b-4561-59bf-a060-9e8747c34a2a",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 103.154.158.70 (BD)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--d1278c31-36d7-501f-9971-b76b9069d85e",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5af4eb06-d389-527e-93df-c33f525299dc",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--f89c8c6b-4561-59bf-a060-9e8747c34a2a",
+      "type": "relationship"
+    },
+    {
+      "confidence": 57,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 11 malicious, 3 suspicious detections. Country: SG. AS: Byteplus Pte. Ltd.. | AbuseIPDB: 100% confidence, 813 reports. ISP: BYTEPLUS. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/101.47.155.9"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/101.47.155.9"
+        }
+      ],
+      "id": "indicator--531c52b2-dce1-5cec-ace4-d0ffc5e06c2f",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 101.47.155.9",
+      "pattern": "[ipv4-addr:value = '101.47.155.9']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Byteplus Pte. Ltd.",
+      "x_noctis_country": "SG",
+      "x_noctis_score": 57
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Byteplus Pte. Ltd. in SG, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--1e010aa7-3010-5349-8055-3732df629922",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 101.47.155.9 (SG)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--aed4888a-9b02-5448-b403-44f7389bf1c3",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--531c52b2-dce1-5cec-ace4-d0ffc5e06c2f",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--1e010aa7-3010-5349-8055-3732df629922",
+      "type": "relationship"
+    },
+    {
+      "confidence": 61,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious IP observed attacking NOCTIS honeypot infrastructure. | VirusTotal: 18 malicious, 3 suspicious detections. Country: SG. AS: Byteplus Pte. Ltd.. | AbuseIPDB: 100% confidence, 4450 reports. ISP: BYTEPLUS. Usage: Data Center/Web Hosting/Transit. Tor: false.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/ip-address/101.47.156.21"
+        },
+        {
+          "source_name": "AbuseIPDB",
+          "url": "https://www.abuseipdb.com/check/101.47.156.21"
+        }
+      ],
+      "id": "indicator--2a7fc5b1-621c-5f84-b187-d54ba7de84ba",
+      "labels": [
+        "malicious-activity",
+        "honeypot",
+        "hosting-infrastructure"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious IP: 101.47.156.21",
+      "pattern": "[ipv4-addr:value = '101.47.156.21']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z",
+      "x_noctis_as_owner": "Byteplus Pte. Ltd.",
+      "x_noctis_country": "SG",
+      "x_noctis_score": 61
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Infrastructure owned by Byteplus Pte. Ltd. in SG, observed conducting SSH brute-force and exploitation attempts.",
+      "id": "infrastructure--dc640932-1167-5f20-a06f-1c32746625d9",
+      "infrastructure_types": [
+        "command-and-control"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Attack source 101.47.156.21 (SG)",
+      "spec_version": "2.1",
+      "type": "infrastructure"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--bc168c31-e56a-5198-9f6a-8d4e59ea5f48",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--2a7fc5b1-621c-5f84-b187-d54ba7de84ba",
+      "spec_version": "2.1",
+      "target_ref": "infrastructure--dc640932-1167-5f20-a06f-1c32746625d9",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260528-214453_sftp__root_redtail_i686. Type: ELF. Size: 1748196 bytes. 37 AV detections. Sample detections: Trojan.Linux.GenericKD.79882, Malicious (score: 99), Trojan.Win32.ZYX.USBLE726, Riskware.Linux.Agent.Vsja, Other:Malware-gen [Trj].",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/048e374baac36d8cf68dd32e48313ef8eb517d647548b1bf5f26d2d0e2e3cdc7"
+        }
+      ],
+      "id": "malware--e2056eba-aca6-5c06-af48-d6678215a577",
+      "is_family": false,
+      "malware_types": [
+        "trojan"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "20260528-214453_sftp__root_redtail_i686",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 37,
+      "x_noctis_file_size": 1748196,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 57,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260528-214453_sftp__root_redtail_i686. Type: ELF. Size: 1748196 bytes. 37 AV detections. Sample detections: Trojan.Linux.GenericKD.79882, Malicious (score: 99), Trojan.Win32.ZYX.USBLE726, Riskware.Linux.Agent.Vsja, Other:Malware-gen [Trj].",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/048e374baac36d8cf68dd32e48313ef8eb517d647548b1bf5f26d2d0e2e3cdc7"
+        }
+      ],
+      "id": "indicator--08117e45-7feb-5daf-baa5-4557de5ac1a1",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 20260528-214453_sftp__root_redtail_i686",
+      "pattern": "[file:hashes.'SHA-256' = '048e374baac36d8cf68dd32e48313ef8eb517d647548b1bf5f26d2d0e2e3cdc7']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--e07a27e0-b663-5a90-8736-8e3e4bf44433",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--08117e45-7feb-5daf-baa5-4557de5ac1a1",
+      "spec_version": "2.1",
+      "target_ref": "malware--e2056eba-aca6-5c06-af48-d6678215a577",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: malware_sshd. Type: ELF. Size: 98304 bytes. 33 AV detections. Sample detections: E64/ABTrojan.YITE-, Application.Linux.Miner.68, elf.trojan.generic, Trojan.Linux.Agent.adc, Mal/Generic-S.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/062ba629c7b2b914b289c8da0573c179fe86f2cb1f70a31f9a1400d563c3042a"
+        }
+      ],
+      "id": "malware--9ea2c796-2ef0-558c-85b2-0c7705f5d079",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "malware_sshd",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 33,
+      "x_noctis_file_size": 98304,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 51,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: malware_sshd. Type: ELF. Size: 98304 bytes. 33 AV detections. Sample detections: E64/ABTrojan.YITE-, Application.Linux.Miner.68, elf.trojan.generic, Trojan.Linux.Agent.adc, Mal/Generic-S.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/062ba629c7b2b914b289c8da0573c179fe86f2cb1f70a31f9a1400d563c3042a"
+        }
+      ],
+      "id": "indicator--4aeebf46-e545-594e-ae85-221d2b2f075d",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: malware_sshd",
+      "pattern": "[file:hashes.'SHA-256' = '062ba629c7b2b914b289c8da0573c179fe86f2cb1f70a31f9a1400d563c3042a']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--de93e0b4-43b3-5ed4-bb19-b2566d707ebf",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--4aeebf46-e545-594e-ae85-221d2b2f075d",
+      "spec_version": "2.1",
+      "target_ref": "malware--9ea2c796-2ef0-558c-85b2-0c7705f5d079",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260528-214443_sftp__root_redtail_arm7. Type: ELF. Size: 1299516 bytes. 35 AV detections. Sample detections: elf.miner.generic, Trojan.Linux.Miner, CoinMiner.Linux.Agent.Vz7y, Generic Reputation PUA (PUA), LINUX.Agent.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/3625d068896953595e75df328676a08bc071977ac1ff95d44b745bbcb7018c6f"
+        }
+      ],
+      "id": "malware--ddf14595-4f40-57ab-8013-b3e98837a451",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "20260528-214443_sftp__root_redtail_arm7",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 35,
+      "x_noctis_file_size": 1299516,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 54,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260528-214443_sftp__root_redtail_arm7. Type: ELF. Size: 1299516 bytes. 35 AV detections. Sample detections: elf.miner.generic, Trojan.Linux.Miner, CoinMiner.Linux.Agent.Vz7y, Generic Reputation PUA (PUA), LINUX.Agent.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/3625d068896953595e75df328676a08bc071977ac1ff95d44b745bbcb7018c6f"
+        }
+      ],
+      "id": "indicator--1cc412e4-091a-55b3-9f2e-5266086d3024",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 20260528-214443_sftp__root_redtail_arm7",
+      "pattern": "[file:hashes.'SHA-256' = '3625d068896953595e75df328676a08bc071977ac1ff95d44b745bbcb7018c6f']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--10bc213a-9111-54c5-8787-58769bb62496",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--1cc412e4-091a-55b3-9f2e-5266086d3024",
+      "spec_version": "2.1",
+      "target_ref": "malware--ddf14595-4f40-57ab-8013-b3e98837a451",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260427-121213_sftp__root__1093029749207300582_sshd. Type: ELF. Size: 1867776 bytes. 36 AV detections. Sample detections: HEUR:Trojan.Linux.Miner.gen, Linux.Siggen.8622, ti!36E70B9C5271, Application.Linux.Miner.68 (B), E64/ABRisk.JTFG-1.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/36e70b9c5271aefeb3e4b4bc0eff8e81683f0ddfea4deed55dbc4cc0567ca179"
+        }
+      ],
+      "id": "malware--fdbb3673-49c8-5d71-a0ad-c8948aa035a9",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "20260427-121213_sftp__root__1093029749207300582_sshd",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 36,
+      "x_noctis_file_size": 1867776,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 55,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260427-121213_sftp__root__1093029749207300582_sshd. Type: ELF. Size: 1867776 bytes. 36 AV detections. Sample detections: HEUR:Trojan.Linux.Miner.gen, Linux.Siggen.8622, ti!36E70B9C5271, Application.Linux.Miner.68 (B), E64/ABRisk.JTFG-1.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/36e70b9c5271aefeb3e4b4bc0eff8e81683f0ddfea4deed55dbc4cc0567ca179"
+        }
+      ],
+      "id": "indicator--946ff533-800a-587e-a0a9-8d631d8c078a",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 20260427-121213_sftp__root__1093029749207300582_sshd",
+      "pattern": "[file:hashes.'SHA-256' = '36e70b9c5271aefeb3e4b4bc0eff8e81683f0ddfea4deed55dbc4cc0567ca179']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--98a00b75-5620-541f-9159-d29cea4bbe29",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--946ff533-800a-587e-a0a9-8d631d8c078a",
+      "spec_version": "2.1",
+      "target_ref": "malware--fdbb3673-49c8-5d71-a0ad-c8948aa035a9",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260412-092959_sftp__root__4516272478872701756_sshd. Type: ELF. Size: 163840 bytes. 36 AV detections. Sample detections: Trojan:Linux/Multiverze!rfn, Application.Linux.Miner.68, Application.Linux.Miner.68, ELF:Agent-CXA [Trj], Trojan.Linux.Agent.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/47b268c21591069bfe4099833ad66b8138a53ab2dcb866e040d466aee1f8624c"
+        }
+      ],
+      "id": "malware--987b8cd8-c41c-5d05-8828-8584edfe2dd5",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "20260412-092959_sftp__root__4516272478872701756_sshd",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 36,
+      "x_noctis_file_size": 163840,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 55,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260412-092959_sftp__root__4516272478872701756_sshd. Type: ELF. Size: 163840 bytes. 36 AV detections. Sample detections: Trojan:Linux/Multiverze!rfn, Application.Linux.Miner.68, Application.Linux.Miner.68, ELF:Agent-CXA [Trj], Trojan.Linux.Agent.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/47b268c21591069bfe4099833ad66b8138a53ab2dcb866e040d466aee1f8624c"
+        }
+      ],
+      "id": "indicator--9c0db5ea-91f8-5a29-b035-13819a1135e5",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 20260412-092959_sftp__root__4516272478872701756_sshd",
+      "pattern": "[file:hashes.'SHA-256' = '47b268c21591069bfe4099833ad66b8138a53ab2dcb866e040d466aee1f8624c']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--55b91475-eb1a-5fb3-bfc3-0d28858089aa",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--9c0db5ea-91f8-5a29-b035-13819a1135e5",
+      "spec_version": "2.1",
+      "target_ref": "malware--987b8cd8-c41c-5d05-8828-8584edfe2dd5",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: sSBh. Type: ELF. Size: 1880264 bytes. 37 AV detections. Sample detections: Generik.JUYKFLD trojan, Trojan.Linux.GenericKD.73462, Trojan.TR/Malware, LINUX.Agent, Linux.Siggen.10750.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/59c29436755b0778e968d49feeae20ed65f5fa5e35f9f7965b8ed93420db91e5"
+        }
+      ],
+      "id": "malware--933deae9-3351-574a-8d3a-b7677f82c8e3",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "sSBh",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 37,
+      "x_noctis_file_size": 1880264,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 57,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: sSBh. Type: ELF. Size: 1880264 bytes. 37 AV detections. Sample detections: Generik.JUYKFLD trojan, Trojan.Linux.GenericKD.73462, Trojan.TR/Malware, LINUX.Agent, Linux.Siggen.10750.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/59c29436755b0778e968d49feeae20ed65f5fa5e35f9f7965b8ed93420db91e5"
+        }
+      ],
+      "id": "indicator--08b7f999-22a9-552f-b7e1-a84d16308df2",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: sSBh",
+      "pattern": "[file:hashes.'SHA-256' = '59c29436755b0778e968d49feeae20ed65f5fa5e35f9f7965b8ed93420db91e5']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--a6180ed8-c89c-5ecf-8075-5cfb2d7f2e80",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--08b7f999-22a9-552f-b7e1-a84d16308df2",
+      "spec_version": "2.1",
+      "target_ref": "malware--933deae9-3351-574a-8d3a-b7677f82c8e3",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: setup.sh. Type: Shell script. Size: 1951 bytes. 28 AV detections. Sample detections: Trojan.Generic.38481233, Trojan.Generic.38481233, Trojan.Generic.38481233, BV:Agent-CCJ [Trj], shell.trojan.alevaul.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/783adb7ad6b16fe9818f3e6d48b937c3ca1994ef24e50865282eeedeab7e0d59"
+        }
+      ],
+      "id": "malware--459c3569-166e-53ea-b9de-a677770d940e",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "setup.sh",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 28,
+      "x_noctis_file_size": 1951,
+      "x_noctis_file_type": "Shell script"
+    },
+    {
+      "confidence": 43,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: setup.sh. Type: Shell script. Size: 1951 bytes. 28 AV detections. Sample detections: Trojan.Generic.38481233, Trojan.Generic.38481233, Trojan.Generic.38481233, BV:Agent-CCJ [Trj], shell.trojan.alevaul.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/783adb7ad6b16fe9818f3e6d48b937c3ca1994ef24e50865282eeedeab7e0d59"
+        }
+      ],
+      "id": "indicator--18777ddc-f76d-5f5e-be1a-d1660915adb9",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: setup.sh",
+      "pattern": "[file:hashes.'SHA-256' = '783adb7ad6b16fe9818f3e6d48b937c3ca1994ef24e50865282eeedeab7e0d59']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--e14d6ff4-32d4-55b9-bb01-135844318239",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--18777ddc-f76d-5f5e-be1a-d1660915adb9",
+      "spec_version": "2.1",
+      "target_ref": "malware--459c3569-166e-53ea-b9de-a677770d940e",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20250819-134845_sftp__root__6054118309300232938_sshd. Type: ELF. Size: 10485760 bytes. 38 AV detections. Sample detections: Riskware/CoinMiner, ELF:Agent-CXA [Trj], Trojan.Linux.Generic, Application.Linux.Miner.68, Linux/CoinMiner.ABF trojan.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/7a9da7d10aa80b0f9e2e3f9e518030c86026a636e0b6de35905e15dd4c8e3e2d"
+        }
+      ],
+      "id": "malware--79153af9-50b9-577b-b183-7f68b41a8348",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "20250819-134845_sftp__root__6054118309300232938_sshd",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 38,
+      "x_noctis_file_size": 10485760,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 58,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20250819-134845_sftp__root__6054118309300232938_sshd. Type: ELF. Size: 10485760 bytes. 38 AV detections. Sample detections: Riskware/CoinMiner, ELF:Agent-CXA [Trj], Trojan.Linux.Generic, Application.Linux.Miner.68, Linux/CoinMiner.ABF trojan.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/7a9da7d10aa80b0f9e2e3f9e518030c86026a636e0b6de35905e15dd4c8e3e2d"
+        }
+      ],
+      "id": "indicator--57b3d5ec-c39e-577e-a285-28b39b2bd8de",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 20250819-134845_sftp__root__6054118309300232938_sshd",
+      "pattern": "[file:hashes.'SHA-256' = '7a9da7d10aa80b0f9e2e3f9e518030c86026a636e0b6de35905e15dd4c8e3e2d']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--bde3c513-c8ac-5444-865f-b6fceffa05bf",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--57b3d5ec-c39e-577e-a285-28b39b2bd8de",
+      "spec_version": "2.1",
+      "target_ref": "malware--79153af9-50b9-577b-b183-7f68b41a8348",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: a0244f5f959cad99467f98cefa91d71c91cfa1623c675a95eec158a429c5d21c.sh. Type: Shell script. Size: 2104 bytes. 27 AV detections. Sample detections: ti!A0244F5F959C, Trojan.GenericKD.80182669, ABmRisk.BKIL-7, Trojan.GenericKD.80182669, Win32.Trojan-Downloader.Agent.Cflw.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/a0244f5f959cad99467f98cefa91d71c91cfa1623c675a95eec158a429c5d21c"
+        }
+      ],
+      "id": "malware--114938b6-80b4-5c70-a582-6fb5cb1163da",
+      "is_family": false,
+      "malware_types": [
+        "trojan"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "a0244f5f959cad99467f98cefa91d71c91cfa1623c675a95eec158a429c5d21c.sh",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 27,
+      "x_noctis_file_size": 2104,
+      "x_noctis_file_type": "Shell script"
+    },
+    {
+      "confidence": 42,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: a0244f5f959cad99467f98cefa91d71c91cfa1623c675a95eec158a429c5d21c.sh. Type: Shell script. Size: 2104 bytes. 27 AV detections. Sample detections: ti!A0244F5F959C, Trojan.GenericKD.80182669, ABmRisk.BKIL-7, Trojan.GenericKD.80182669, Win32.Trojan-Downloader.Agent.Cflw.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/a0244f5f959cad99467f98cefa91d71c91cfa1623c675a95eec158a429c5d21c"
+        }
+      ],
+      "id": "indicator--9424e8f3-ab90-55d1-84df-260cb6c58d9a",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: a0244f5f959cad99467f98cefa91d71c91cfa1623c675a95eec158a429c5d21c.sh",
+      "pattern": "[file:hashes.'SHA-256' = 'a0244f5f959cad99467f98cefa91d71c91cfa1623c675a95eec158a429c5d21c']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--e95a8f60-cd1f-5686-931f-d79c07641592",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--9424e8f3-ab90-55d1-84df-260cb6c58d9a",
+      "spec_version": "2.1",
+      "target_ref": "malware--114938b6-80b4-5c70-a582-6fb5cb1163da",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: authorized_keys. Type: HTML. Size: 389 bytes. 33 AV detections. Sample detections: Linux/Miner-ADV, pem.trojan.shell, Trojan ( 0001140e1 ), Linux/Miner-ADV, Linux.BtcMine.271.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/a8460f446be540410004b1a8db4083773fa46f7fe76fa84219c93daa1669f8f2"
+        }
+      ],
+      "id": "malware--f911f172-170e-5559-aa62-ecabee4ea2f8",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "authorized_keys",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 33,
+      "x_noctis_file_size": 389,
+      "x_noctis_file_type": "HTML"
+    },
+    {
+      "confidence": 51,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: authorized_keys. Type: HTML. Size: 389 bytes. 33 AV detections. Sample detections: Linux/Miner-ADV, pem.trojan.shell, Trojan ( 0001140e1 ), Linux/Miner-ADV, Linux.BtcMine.271.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/a8460f446be540410004b1a8db4083773fa46f7fe76fa84219c93daa1669f8f2"
+        }
+      ],
+      "id": "indicator--f33a86e4-81a9-53cf-bf86-f5c800d849fa",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: authorized_keys",
+      "pattern": "[file:hashes.'SHA-256' = 'a8460f446be540410004b1a8db4083773fa46f7fe76fa84219c93daa1669f8f2']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--1e4caf16-7ddf-5d5f-b3c1-86ffa18d7933",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f33a86e4-81a9-53cf-bf86-f5c800d849fa",
+      "spec_version": "2.1",
+      "target_ref": "malware--f911f172-170e-5559-aa62-ecabee4ea2f8",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: t99r3.exe. Type: ELF. Size: 458752 bytes. 18 AV detections. Sample detections: Trojan.Linux.Generic.D10145, Trojan.Gen.NPE, Trojan:Linux/Multiverze!rfn, Trojan.Linux.MULTIVERZE.USBLCS26, Mal/Generic-S.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/bd706a3987ca2e3dd1e82ff7408a6c106a1a4cdca498d6a25dc5f92b581825f5"
+        }
+      ],
+      "id": "malware--bbdaee2e-a26d-5d13-8d93-28d7e718ed1c",
+      "is_family": false,
+      "malware_types": [
+        "trojan"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "t99r3.exe",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 18,
+      "x_noctis_file_size": 458752,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 28,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: t99r3.exe. Type: ELF. Size: 458752 bytes. 18 AV detections. Sample detections: Trojan.Linux.Generic.D10145, Trojan.Gen.NPE, Trojan:Linux/Multiverze!rfn, Trojan.Linux.MULTIVERZE.USBLCS26, Mal/Generic-S.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/bd706a3987ca2e3dd1e82ff7408a6c106a1a4cdca498d6a25dc5f92b581825f5"
+        }
+      ],
+      "id": "indicator--f08bb0e5-0036-5437-adb0-054c91e5b35d",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: t99r3.exe",
+      "pattern": "[file:hashes.'SHA-256' = 'bd706a3987ca2e3dd1e82ff7408a6c106a1a4cdca498d6a25dc5f92b581825f5']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--9f9d45d4-d560-5c6c-9d97-2fb0df1e294f",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--f08bb0e5-0036-5437-adb0-054c91e5b35d",
+      "spec_version": "2.1",
+      "target_ref": "malware--bbdaee2e-a26d-5d13-8d93-28d7e718ed1c",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260528-214443_sftp__root_clean_sh. Type: Shell script. Size: 795 bytes. 27 AV detections. Sample detections: Trojan.TR/Malware, Trojan.Generic.D250C90A, Linux/Dldr-XB, Trojan.Win32.MULTIVERZE.VSNW01J24, Other:Malware-gen [Trj].",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/d46555af1173d22f07c37ef9c1e0e74fd68db022f2b6fb3ab5388d2c5bc6a98e"
+        }
+      ],
+      "id": "malware--af8c48c9-91b1-5742-b522-8e3f8bfda34e",
+      "is_family": false,
+      "malware_types": [
+        "trojan"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "20260528-214443_sftp__root_clean_sh",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 27,
+      "x_noctis_file_size": 795,
+      "x_noctis_file_type": "Shell script"
+    },
+    {
+      "confidence": 42,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260528-214443_sftp__root_clean_sh. Type: Shell script. Size: 795 bytes. 27 AV detections. Sample detections: Trojan.TR/Malware, Trojan.Generic.D250C90A, Linux/Dldr-XB, Trojan.Win32.MULTIVERZE.VSNW01J24, Other:Malware-gen [Trj].",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/d46555af1173d22f07c37ef9c1e0e74fd68db022f2b6fb3ab5388d2c5bc6a98e"
+        }
+      ],
+      "id": "indicator--b574fa1d-2625-5820-9f35-58030b279be7",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 20260528-214443_sftp__root_clean_sh",
+      "pattern": "[file:hashes.'SHA-256' = 'd46555af1173d22f07c37ef9c1e0e74fd68db022f2b6fb3ab5388d2c5bc6a98e']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--c31d1744-fa59-5a30-9650-b338623f41c7",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b574fa1d-2625-5820-9f35-58030b279be7",
+      "spec_version": "2.1",
+      "target_ref": "malware--af8c48c9-91b1-5742-b522-8e3f8bfda34e",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260528-214448_sftp__root_redtail_arm8. Type: ELF. Size: 1560860 bytes. 35 AV detections. Sample detections: Artemis!Trojan, E64/Mirai5.AWM, Risktool.Linux.Miner.nf, Linux.Siggen.10755, PUA.Gen.2.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/dbb7ebb960dc0d5a480f97ddde3a227a2d83fcaca7d37ae672e6a0a6785631e9"
+        }
+      ],
+      "id": "malware--cebe676f-6fed-5cf1-ab92-28b83dc8207b",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "20260528-214448_sftp__root_redtail_arm8",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 35,
+      "x_noctis_file_size": 1560860,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 54,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260528-214448_sftp__root_redtail_arm8. Type: ELF. Size: 1560860 bytes. 35 AV detections. Sample detections: Artemis!Trojan, E64/Mirai5.AWM, Risktool.Linux.Miner.nf, Linux.Siggen.10755, PUA.Gen.2.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/dbb7ebb960dc0d5a480f97ddde3a227a2d83fcaca7d37ae672e6a0a6785631e9"
+        }
+      ],
+      "id": "indicator--c1494b5b-15c4-5c11-9631-f42dc5707b82",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 20260528-214448_sftp__root_redtail_arm8",
+      "pattern": "[file:hashes.'SHA-256' = 'dbb7ebb960dc0d5a480f97ddde3a227a2d83fcaca7d37ae672e6a0a6785631e9']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--96c01f81-e437-5b65-8943-d7132015013a",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c1494b5b-15c4-5c11-9631-f42dc5707b82",
+      "spec_version": "2.1",
+      "target_ref": "malware--cebe676f-6fed-5cf1-ab92-28b83dc8207b",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260510-064211_sftp__root__5122676231520924402_sshd. Type: ELF. Size: 131072 bytes. 35 AV detections. Sample detections: Application.Linux.Miner.68, Trojan:Linux/CoinMiner!MTB, Trojan.Linux.Agent.adc, Trojan.Miner/Linux!8.13825 (CLOUD), Trojan.Linux.Agent.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/e948036f1c3b3024a6864fa1c49332c80e1fd28484cf487233a50154ffe104f8"
+        }
+      ],
+      "id": "malware--4f375462-d3a8-5c52-99e3-7eff6c936f79",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "20260510-064211_sftp__root__5122676231520924402_sshd",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 35,
+      "x_noctis_file_size": 131072,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 54,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20260510-064211_sftp__root__5122676231520924402_sshd. Type: ELF. Size: 131072 bytes. 35 AV detections. Sample detections: Application.Linux.Miner.68, Trojan:Linux/CoinMiner!MTB, Trojan.Linux.Agent.adc, Trojan.Miner/Linux!8.13825 (CLOUD), Trojan.Linux.Agent.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/e948036f1c3b3024a6864fa1c49332c80e1fd28484cf487233a50154ffe104f8"
+        }
+      ],
+      "id": "indicator--5b7b420e-6113-509b-bdd1-65d46db88b15",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 20260510-064211_sftp__root__5122676231520924402_sshd",
+      "pattern": "[file:hashes.'SHA-256' = 'e948036f1c3b3024a6864fa1c49332c80e1fd28484cf487233a50154ffe104f8']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--5d893d7d-fa52-5b6e-982e-918700001978",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5b7b420e-6113-509b-bdd1-65d46db88b15",
+      "spec_version": "2.1",
+      "target_ref": "malware--4f375462-d3a8-5c52-99e3-7eff6c936f79",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 3dg1qyolx.exe. Type: ELF. Size: 2195456 bytes. 37 AV detections. Sample detections: Trojan.Linux.dsm, Coinminer.Linux.MULTIVERZE.TL0101DQ26ZY, ELF/TrojanGen.A, Trojan.Linux.Multiverze.4!c, Trojan:Linux/Multiverze!rfn.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/eb815fb77cc1c177f613bb69d349d8bf5150afef03c66005cbbf3767954c279c"
+        }
+      ],
+      "id": "malware--cd54bf7e-cfec-5c05-a703-d26cb392cee9",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "3dg1qyolx.exe",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 37,
+      "x_noctis_file_size": 2195456,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 57,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 3dg1qyolx.exe. Type: ELF. Size: 2195456 bytes. 37 AV detections. Sample detections: Trojan.Linux.dsm, Coinminer.Linux.MULTIVERZE.TL0101DQ26ZY, ELF/TrojanGen.A, Trojan.Linux.Multiverze.4!c, Trojan:Linux/Multiverze!rfn.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/eb815fb77cc1c177f613bb69d349d8bf5150afef03c66005cbbf3767954c279c"
+        }
+      ],
+      "id": "indicator--28dd215a-81a9-501b-848c-e6e8fccc1cfd",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 3dg1qyolx.exe",
+      "pattern": "[file:hashes.'SHA-256' = 'eb815fb77cc1c177f613bb69d349d8bf5150afef03c66005cbbf3767954c279c']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--8e7e0020-41ab-5424-9bee-23bf4d7f9712",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--28dd215a-81a9-501b-848c-e6e8fccc1cfd",
+      "spec_version": "2.1",
+      "target_ref": "malware--cd54bf7e-cfec-5c05-a703-d26cb392cee9",
+      "type": "relationship"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20250802-034216_sftp__root__3780602120213242335_sshd. Type: ELF. Size: 1835008 bytes. 35 AV detections. Sample detections: Malicious (score: 99), ELF:Agent-CXA [Trj], Application.Linux.Miner.68, ELF:Agent-CXA [Trj], Trojan/Linux.Agent.ca.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/f9dd99970ad2a4ce3ed0f3c37a2cdac97260b0427dd77ae2eeafb148e1189f49"
+        }
+      ],
+      "id": "malware--9ddc149e-a844-58dc-bf5d-05a0bc9d838f",
+      "is_family": false,
+      "malware_types": [
+        "resource-exploitation"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "20250802-034216_sftp__root__3780602120213242335_sshd",
+      "spec_version": "2.1",
+      "type": "malware",
+      "x_noctis_av_detections": 35,
+      "x_noctis_file_size": 1835008,
+      "x_noctis_file_type": "ELF"
+    },
+    {
+      "confidence": 54,
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "description": "Malicious file dropped on NOCTIS honeypot. Name: 20250802-034216_sftp__root__3780602120213242335_sshd. Type: ELF. Size: 1835008 bytes. 35 AV detections. Sample detections: Malicious (score: 99), ELF:Agent-CXA [Trj], Application.Linux.Miner.68, ELF:Agent-CXA [Trj], Trojan/Linux.Agent.ca.",
+      "external_references": [
+        {
+          "source_name": "VirusTotal",
+          "url": "https://www.virustotal.com/gui/file/f9dd99970ad2a4ce3ed0f3c37a2cdac97260b0427dd77ae2eeafb148e1189f49"
+        }
+      ],
+      "id": "indicator--699b10a8-025e-57ff-97b1-7403332e6a39",
+      "labels": [
+        "malicious-activity",
+        "honeypot"
+      ],
+      "modified": "2026-05-29T05:33:03.381Z",
+      "name": "Malicious file: 20250802-034216_sftp__root__3780602120213242335_sshd",
+      "pattern": "[file:hashes.'SHA-256' = 'f9dd99970ad2a4ce3ed0f3c37a2cdac97260b0427dd77ae2eeafb148e1189f49']",
+      "pattern_type": "stix",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-05-29T05:33:03.381Z"
+    },
+    {
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "relationship--7c261600-3141-503c-adc1-8c7a4fac69d8",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--699b10a8-025e-57ff-97b1-7403332e6a39",
+      "spec_version": "2.1",
+      "target_ref": "malware--9ddc149e-a844-58dc-bf5d-05a0bc9d838f",
+      "type": "relationship"
+    },
+    {
+      "abstract": "NOCTIS honeypot IOC collection summary",
+      "content": "NOCTIS Honeypot Collection Summary — 2026-05-29 05:17 UTC\nTotal IPs observed: 20\nTotal file hashes captured: 20\nSource: Cowrie SSH/Telnet honeypot",
+      "created": "2026-05-29T05:33:03.381Z",
+      "created_by_ref": "identity--61431291-4d10-5c38-bcfc-2aa75ad49079",
+      "id": "note--6cba4549-50e9-5889-a216-38e0ea12111b",
+      "modified": "2026-05-29T05:33:03.381Z",
+      "object_refs": [
+        "identity--61431291-4d10-5c38-bcfc-2aa75ad49079"
+      ],
+      "spec_version": "2.1",
+      "type": "note"
+    }
+  ],
+  "type": "bundle"
+}
